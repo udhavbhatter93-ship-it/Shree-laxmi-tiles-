@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SHREE LAXMI TILES | Surat</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f2ec;
+color:#181716;
+font-family:"DM Sans",sans-serif;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.topbar{
+background:#181716;
+color:#e9dfce;
+text-align:center;
+padding:9px;
+font-size:8px;
+letter-spacing:2px;
+}
+
+header{
+height:82px;
+padding:0 7%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border-bottom:1px solid #ddd7cd;
+position:sticky;
+top:0;
+z-index:100;
+background:rgba(245,242,236,.95);
+backdrop-filter:blur(15px);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:11px;
+}
+
+.logo-circle{
+width:43px;
+height:43px;
+border:1px solid #ad8648;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:"Playfair Display",serif;
+color:#ad8648;
+font-size:17px;
+}
+
+.logo-text{
+display:flex;
+flex-direction:column;
+}
+
+.logo-text strong{
+font-size:13px;
+letter-spacing:1px;
+}
+
+.logo-text small{
+font-size:8px;
+letter-spacing:5px;
+margin-top:3px;
+}
+
+nav{
+display:flex;
+gap:35px;
+font-size:12px;
+}
+
+nav a{
+color:#66615a;
+transition:.3s;
+}
+
+nav a:hover{
+color:#a17d43;
+}
+
+.nav-btn{
+border:1px solid #181716;
+padding:11px 18px;
+border-radius:30px;
+font-size:10px;
+}
+
+.hero{
+min-height:calc(100vh - 112px);
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:7%;
+align-items:center;
+padding:7vw 8%;
+}
+
+.kicker{
+color:#a27d43;
+font-size:9px;
+letter-spacing:3px;
+font-weight:700;
+}
+
+h1{
+font-family:"Playfair Display",serif;
+font-weight:500;
+font-size:clamp(55px,7vw,95px);
+line-height:.94;
+margin:22px 0;
+}
+
+h1 i,
+h2 i{
+color:#a27d43;
+}
+
+.hero-text{
+max-width:520px;
+color:#716c65;
+font-size:15px;
+line-height:1.9;
+}
+
+.buttons{
+display:flex;
+gap:22px;
+align-items:center;
+margin-top:30px;
+}
+
+.btn{
+padding:15px 21px;
+font-size:10px;
+font-weight:700;
+}
+
+.black-btn{
+background:#191817;
+color:white;
+}
+
+.simple-btn{
+border-bottom:1px solid #777;
+}
+
+.hero-art{
+height:610px;
+position:relative;
+overflow:hidden;
+background:#c9c4bb;
+}
+
+.tile1{
+position:absolute;
+left:0;
+top:0;
+width:70%;
+height:80%;
+background:linear-gradient(135deg,#aaa69e,#eeeae2 40%,#88847d);
+clip-path:polygon(0 0,100% 0,80% 100%,0 88%);
+}
+
+.tile2{
+position:absolute;
+right:0;
+bottom:0;
+width:67%;
+height:75%;
+background:linear-gradient(145deg,#161616,#6e6a64,#171717);
+clip-path:polygon(25% 0,100% 10%,100% 100%,0 100%);
+}
+
+.tile3{
+position:absolute;
+right:8%;
+top:10%;
+width:55%;
+height:48%;
+background:linear-gradient(135deg,#eeeae2,#aaa49a);
+clip-path:polygon(0 0,100% 15%,83% 100%,0 76%);
+}
+
+.hero-card{
+position:absolute;
+left:30px;
+bottom:30px;
+background:#f5f2ec;
+padding:22px 27px;
+}
+
+.hero-card small{
+color:#a27d43;
+font-size:8px;
+letter-spacing:2px;
+}
+
+.hero-card strong{
+display:block;
+font-family:"Playfair Display",serif;
+font-size:23px;
+margin-top:10px;
+}
+
+.intro{
+padding:120px 8% 70px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10%;
+}
+
+h2{
+font-family:"Playfair Display",serif;
+font-weight:500;
+font-size:clamp(45px,5vw,70px);
+line-height:1;
+margin-top:18px;
+}
+
+.intro p:last-child{
+align-self:end;
+max-width:500px;
+color:#706b64;
+line-height:1.9;
+font-size:14px;
+}
+
+.collections{
+padding:15px 8% 120px;
+display:grid;
+grid-template-columns:1.3fr 1fr 1fr;
+gap:18px;
+}
+
+.card{
+background:#ebe7df;
+}
+
+.image{
+height:410px;
+position:relative;
+overflow:hidden;
+}
+
+.image-number{
+position:absolute;
+top:18px;
+left:18px;
+color:white;
+font-size:9px;
+}
+
+.marble{
+background:
+linear-gradient(
+120deg,
+#a8a49c,
+#efebe4 35%,
+#8c8881 36%,
+#d7d3cb 57%,
+#aaa59e 58%,
+#eeeae3
+);
+}
+
+.marble:after{
+content:"";
+position:absolute;
+width:150%;
+height:4px;
+background:#7776;
+transform:rotate(-25deg);
+top:50%;
+left:-20%;
+box-shadow:
+0 80px 0 #aaa8,
+0 -90px 0 #ccc8;
+}
+
+.bath{
+background:linear-gradient(140deg,#d8d3ca,#858077);
+}
+
+.bath-shape{
+position:absolute;
+width:180px;
+height:230px;
+background:#eeeae3;
+border-radius:90px 90px 15px 15px;
+left:50%;
+top:55%;
+transform:translate(-50%,-50%);
+box-shadow:0 25px 40px #0003;
+}
+
+.fittings{
+background:linear-gradient(145deg,#151515,#77716a 48%,#191919);
+}
+
+.tap{
+position:absolute;
+width:130px;
+height:185px;
+border:18px solid #c4ad83;
+border-bottom:0;
+border-radius:80px 80px 0 0;
+left:50%;
+top:55%;
+transform:translate(-50%,-50%);
+}
+
+.tap:after{
+content:"";
+position:absolute;
+width:115px;
+height:18px;
+background:#c4ad83;
+right:-65px;
+bottom:-9px;
+border-radius:20px;
+}
+
+.card-info{
+padding:24px;
+}
+
+.card-info p{
+color:#a27d43;
+font-size:8px;
+letter-spacing:2px;
+}
+
+.card-info h3{
+font-family:"Playfair Display",serif;
+font-size:28px;
+font-weight:500;
+margin:12px 0 20px;
+}
+
+.card-info a{
+font-size:10px;
+font-weight:700;
+}
+
+.features{
+margin:0 8% 120px;
+border-top:1px solid #d3ccc1;
+border-bottom:1px solid #d3ccc1;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+}
+
+.feature{
+padding:30px 20px;
+border-right:1px solid #d3ccc1;
+}
+
+.feature:last-child{
+border:0;
+}
+
+.feature span{
+color:#a27d43;
+font-size:9px;
+}
+
+.feature strong{
+display:block;
+font-family:"Playfair Display",serif;
+font-size:18px;
+margin-top:10px;
+}
+
+.about{
+background:#1a1918;
+color:#f5f2ec;
+padding:120px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10%;
+align-items:center;
+}
+
+.about-art{
+height:500px;
+position:relative;
+overflow:hidden;
+background:#262421;
+}
+
+.about-tile1{
+position:absolute;
+width:70%;
+height:75%;
+background:linear-gradient(135deg,#d5d0c7,#77736c);
+clip-path:polygon(0 0,100% 8%,85% 100%,0 88%);
+}
+
+.about-tile2{
+position:absolute;
+right:0;
+bottom:0;
+width:55%;
+height:55%;
+background:linear-gradient(135deg,#333,#99938a);
+}
+
+.sl{
+position:absolute;
+z-index:3;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+width:105px;
+height:105px;
+border:1px solid #c5a56e;
+border-radius:50%;
+display:grid;
+place-items:center;
+font:500 32px "Playfair Display";
+color:#c5a56e;
+}
+
+.about p:not(.kicker){
+max-width:520px;
+color:#aaa59d;
+line-height:1.9;
+font-size:14px;
+margin:25px 0;
+}
+
+.contact{
+padding:125px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10%;
+}
+
+.contact-box{
+background:#e8e3da;
+padding:38px;
+}
+
+.contact-item{
+border-bottom:1px solid #d2cbc0;
+padding-bottom:25px;
+margin-bottom:25px;
+}
+
+.contact-item small{
+color:#a27d43;
+letter-spacing:2px;
+font-size:8px;
+font-weight:700;
+}
+
+.contact-item p{
+color:#625d56;
+font-size:13px;
+line-height:1.8;
+margin-top:10px;
+}
+
+.contact-item a{
+display:block;
+font-size:15px;
+font-weight:700;
+margin-top:8px;
+}
+
+.wide{
+display:flex;
+justify-content:space-between;
+width:100%;
+margin-top:10px;
+}
+
+.light-btn{
+background:#f5f2ec;
+color:#191817;
+}
+
+footer{
+background:#111;
+color:#999;
+padding:30px 8%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+font-size:9px;
+}
+
+footer .logo-text strong{
+color:white;
+}
+
+.whatsapp{
+position:fixed;
+right:22px;
+bottom:22px;
+width:58px;
+height:58px;
+border-radius:50%;
+background:#191817;
+color:white;
+display:grid;
+place-items:center;
+font-size:10px;
+font-weight:700;
+z-index:200;
+box-shadow:0 10px 30px #0004;
+}
+
+@media(max-width:850px){
+
+.topbar{
+font-size:7px;
+letter-spacing:1px;
+}
+
+header{
+padding:0 6%;
+}
+
+nav{
+display:none;
+}
+
+.nav-btn{
+display:none;
+}
+
+.hero{
+grid-template-columns:1fr;
+padding:65px 6%;
+}
+
+.hero-art{
+height:430px;
+}
+
+.intro{
+grid-template-columns:1fr;
+padding:85px 6% 50px;
+gap:25px;
+}
+
+.collections{
+grid-template-columns:1fr;
+padding:15px 6% 85px;
+}
+
+.image{
+height:330px;
+}
+
+.features{
+grid-template-columns:1fr 1fr;
+margin:0 6% 85px;
+}
+
+.feature{
+border-bottom:1px solid #d3ccc1;
+}
+
+.feature:nth-child(2){
+border-right:0;
+}
+
+.about,
+.contact{
+grid-template-columns:1fr;
+padding:85px 6%;
+gap:45px;
+}
+
+.about-art{
+height:410px;
+}
+
+footer{
+padding:30px 6%;
+display:grid;
+gap:20px;
+}
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<div class="topbar">
+PREMIUM TILES • SANITARYWARE • BATH FITTINGS • GODADRA, SURAT
+</div>
+
+
+<header>
+
+<a href="#home" class="logo">
+
+<span class="logo-circle">
+SL
+</span>
+
+<span class="logo-text">
+
+<strong>
+SHREE LAXMI
+</strong>
+
+<small>
+TILES
+</small>
+
+</span>
+
+</a>
+
+
+<nav>
+
+<a href="#home">
+Home
+</a>
+
+<a href="#collections">
+Collections
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+</nav>
+
+
+<a class="nav-btn"
+href="https://wa.me/918000354992"
+target="_blank">
+
+WhatsApp ↗
+
+</a>
+
+</header>
+
+
+
+<main>
+
+
+<section class="hero" id="home">
+
+
+<div>
+
+<p class="kicker">
+SURAT • PREMIUM COLLECTION
+</p>
+
+
+<h1>
+
+Beautiful spaces<br>
+
+<i>
+begin here.
+</i>
+
+</h1>
+
+
+<p class="hero-text">
+
+Premium tiles, sanitaryware and bath fittings selected to bring a refined,
+elegant and timeless finish to your home.
+
+</p>
+
+
+<div class="buttons">
+
+<a class="btn black-btn"
+href="#collections">
+
+Explore Collection →
+
+</a>
+
+
+<a class="btn simple-btn"
+href="tel:+918000354992">
+
+Call Showroom
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="hero-art">
+
+<div class="tile1"></div>
+
+<div class="tile2"></div>
+
+<div class="tile3"></div>
+
+
+<div class="hero-card">
+
+<small>
+THE SHREE LAXMI EDIT
+</small>
+
+<strong>
+Timeless<br>
+surfaces.
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="intro">
+
+
+<div>
+
+<p class="kicker">
+OUR COLLECTIONS
+</p>
+
+<h2>
+
+Designed for the way<br>
+
+<i>
+you live.
+</i>
+
+</h2>
+
+</div>
+
+
+<p>
+
+From elegant flooring to statement walls and complete bathroom solutions,
+discover finishes that make everyday spaces feel special.
+
+</p>
+
+</section>
+
+
+
+<section class="collections" id="collections">
+
+
+<article class="card">
+
+<div class="image marble">
+
+<span class="image-number">
+01
+</span>
+
+</div>
+
+
+<div class="card-info">
+
+<p>
+TILES / SURFACES
+</p>
+
+<h3>
+Premium Tiles
+</h3>
+
+
+<a
+href="https://wa.me/918000354992?text=Hello%20Shree%20Laxmi%20Tiles%2C%20please%20share%20your%20tile%20collection."
+target="_blank">
+
+Ask for collection →
+
+</a>
+
+</div>
+
+</article>
+
+
+
+<article class="card">
+
+<div class="image bath">
+
+<span class="image-number">
+02
+</span>
+
+<div class="bath-shape">
+</div>
+
+</div>
+
+
+<div class="card-info">
+
+<p>
+BATHROOM / ESSENTIALS
+</p>
+
+<h3>
+Sanitaryware
+</h3>
+
+
+<a
+href="https://wa.me/918000354992?text=Hello%20Shree%20Laxmi%20Tiles%2C%20please%20share%20your%20sanitaryware%20collection."
+target="_blank">
+
+Ask for collection →
+
+</a>
+
+</div>
+
+</article>
+
+
+
+<article class="card">
+
+<div class="image fittings">
+
+<span class="image-number">
+03
+</span>
+
+<div class="tap">
+</div>
+
+</div>
+
+
+<div class="card-info">
+
+<p>
+BATHROOM / DETAILS
+</p>
+
+<h3>
+Bath Fittings
+</h3>
+
+
+<a
+href="https://wa.me/918000354992?text=Hello%20Shree%20Laxmi%20Tiles%2C%20please%20share%20your%20bath%20fittings."
+target="_blank">
+
+Ask for collection →
+
+</a>
+
+</div>
+
+</article>
+
+
+</section>
+
+
+
+<section class="features">
+
+
+<div class="feature">
+
+<span>
+01
+</span>
+
+<strong>
+Premium<br>
+Selection
+</strong>
+
+</div>
+
+
+<div class="feature">
+
+<span>
+02
+</span>
+
+<strong>
+Modern<br>
+Designs
+</strong>
+
+</div>
+
+
+<div class="feature">
+
+<span>
+03
+</span>
+
+<strong>
+Helpful<br>
+Guidance
+</strong>
+
+</div>
+
+
+<div class="feature">
+
+<span>
+04
+</span>
+
+<strong>
+Surat<br>
+Showroom
+</strong>
+
+</div>
+
+
+</section>
+
+
+
+<section class="about" id="about">
+
+
+<div class="about-art">
+
+<div class="about-tile1">
+</div>
+
+<div class="about-tile2">
+</div>
+
+<div class="sl">
+SL
+</div>
+
+</div>
+
+
+
+<div>
+
+<p class="kicker">
+ABOUT SHREE LAXMI TILES
+</p>
+
+
+<h2>
+
+Quality that defines
+
+<i>
+luxury.
+</i>
+
+</h2>
+
+
+<p>
+
+We believe the right surface can completely transform a room.
+Shree Laxmi Tiles brings together premium tiles, sanitaryware and
+bath fittings for customers looking for style, quality and a beautiful finish.
+
+</p>
+
+
+<p>
+
+Visit our showroom in Godadra, Surat and let us help you find the right
+look for your space.
+
+</p>
+
+
+<a
+class="btn black-btn"
+href="#contact">
+
+Visit Our Showroom →
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<section class="contact" id="contact">
+
+
+<div>
+
+<p class="kicker">
+COME SAY HELLO
+</p>
+
+
+<h2>
+
+Let's make your<br>
+
+<i>
+space beautiful.
+</i>
+
+</h2>
+
+</div>
+
+
+
+<div class="contact-box">
+
+
+<div class="contact-item">
+
+<small>
+SHOWROOM ADDRESS
+</small>
+
+
+<p>
+
+1003, Rushi Nagar,<br>
+
+Opp. Sunrise School,<br>
+
+Near Jogni Mata Mandir,<br>
+
+Near Maharana Pratap Chowk,<br>
+
+Godadra, Surat, Gujarat
+
+</p>
+
+</div>
+
+
+
+<div class="contact-item">
+
+<small>
+CALL / WHATSAPP
+</small>
+
+
+<a href="tel:+918000354992">
+8000354992
+</a>
+
+<a href="tel:+918128074395">
+8128074395
+</a>
+
+</div>
+
+
+
+<a
+class="btn black-btn wide"
+href="https://wa.me/918000354992?text=Hello%20Shree%20Laxmi%20Tiles%2C%20I%20would%20like%20to%20visit%20your%20showroom."
+target="_blank">
+
+Chat on WhatsApp ↗
+
+</a>
+
+
+<a
+class="btn light-btn wide"
+href="https://www.google.com/maps/search/?api=1&query=Shree+Laxmi+Tiles+Godadra+Surat"
+target="_blank">
+
+Open Location ↗
+
+</a>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+
+<div class="logo">
+
+<span class="logo-circle">
+SL
+</span>
+
+<span class="logo-text">
+
+<strong>
+SHREE LAXMI
+</strong>
+
+<small>
+TILES
+</small>
+
+</span>
+
+</div>
+
+
+<p>
+© 2026 Shree Laxmi Tiles • Surat, Gujarat
+</p>
+
+
+<a href="#home">
+Back to top ↑
+</a>
+
+
+</footer>
+
+
+
+<a
+class="whatsapp"
+href="https://wa.me/918000354992"
+target="_blank">
+
+WA
+
+</a>
+
+
+</body>
+</html>
